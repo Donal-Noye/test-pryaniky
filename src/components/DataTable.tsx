@@ -110,7 +110,7 @@ const DataTable = () => {
 		setIsAdding(false);
 	};
 
-	if (!data || loading) return <div className="loading"><CircularProgress /></div>;
+	if (loading) return <div className="loading"><CircularProgress /></div>;
 
 	const columns: (keyof FetchDataBody)[] = [
 		'companySigDate',
