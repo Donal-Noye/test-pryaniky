@@ -26,7 +26,6 @@ const App = () => {
           path="/login"
           element={!token ? <Login /> : <Navigate to="/" />}
         />
-
         <Route
           path="/"
           element={
