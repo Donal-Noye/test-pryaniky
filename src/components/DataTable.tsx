@@ -109,7 +109,7 @@ const DataTable = () => {
 		setNewRecord({});
 		setIsAdding(false);
 	};
-
+	console.log(data)
 	if (loading) return <div className="loading"><CircularProgress /></div>;
 
 	const columns: (keyof FetchDataBody)[] = [
